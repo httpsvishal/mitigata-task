@@ -47,6 +47,7 @@ const AllUsers = ({ selectedUsers,updateStatus }) => {
         setSortedData(sorted);
         setSortOrder({ field, order: newOrder });
         setCurrentPage(1);
+        setDisplayedUsers(sorted.slice(0, usersPerLoad)); // Update displayed users after sorting
     };
 
     const totalPages = Math.ceil(sortedData.length / usersPerPage);
