@@ -7,7 +7,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 const usersPerPage = 10;
 
-const AllUsers = ({ selectedUsers }) => {
+const AllUsers = ({ selectedUsers,updateStatus }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const [sortOrder, setSortOrder] = useState({ field: "name", order: "asc" });
     const [sortedData, setSortedData] = useState([]); console.log("Component Mounted");
@@ -128,7 +128,7 @@ const AllUsers = ({ selectedUsers }) => {
 
 
                 {currentUsers.map((userData) => (
-                    <User key={userData.id} userData={userData} />
+                    <User key={userData.id} userData={userData} updateStatus={updateStatus} />
                 ))}
 
             </div>

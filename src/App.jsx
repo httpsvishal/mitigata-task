@@ -7,6 +7,7 @@ import Filters from "./components/Filters";
 export default function App() {
   const[selectedUsers,setSelectedUsers] = useState(Records);
   const updateStatus = (userId, newStatus) => {
+    console.log("heyy");
     setSelectedUsers(prevUsers =>
         prevUsers.map(user =>
             user.id === userId
