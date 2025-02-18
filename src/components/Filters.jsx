@@ -53,8 +53,7 @@ const Filters = ({ setSelectedUsers }) => {
     setSelectedUsers(filteredUsers);
   };
   return (
-    <div className="flex justify-between mb-16   text-2xl font-medium items-center">
-      {/* Search Input */}
+    <div className="flex justify-between mb-8  text-lg font-medium items-center">
       <div className="relative border">
         <MdSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
         <input
@@ -66,7 +65,6 @@ const Filters = ({ setSelectedUsers }) => {
         />
       </div>
 
-      {/* Status Filter Dropdown */}
       <div className="flex gap-8">
         <select
           value={status}

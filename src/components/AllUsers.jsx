@@ -60,7 +60,7 @@ const AllUsers = ({ selectedUsers }) => {
         <div className="bg-white px-12 py-8 rounded-2xl flex flex-col items-center p-4">
             <div className="flex w-full flex-col gap-4">
                 <div className="grid grid-cols-7 border-b pb-2 font-semibold">
-                    {/* Name Column */}
+                   
                     <span
                         className="col-span-1 opacity-70 text-2xl flex gap-3 items-center cursor-pointer"
                         onClick={() => sortByField("name")}
@@ -73,7 +73,6 @@ const AllUsers = ({ selectedUsers }) => {
                             : <ArrowUpWideNarrow size={26} className="opacity-50" /> /* Default icon */}
                     </span>
 
-                    {/* Email Column (col-span-2) */}
                     <span
                         className="col-span-2 opacity-70 text-2xl flex gap-3 items-center cursor-pointer"
                         onClick={() => sortByField("email")}
@@ -86,7 +85,6 @@ const AllUsers = ({ selectedUsers }) => {
                             : <ArrowUpWideNarrow size={26} className="opacity-50" />}
                     </span>
 
-                    {/* Date Column */}
                     <span
                         className="col-span-1 opacity-70 text-2xl flex gap-3 items-center cursor-pointer"
                         onClick={() => sortByField("date")}
@@ -99,7 +97,6 @@ const AllUsers = ({ selectedUsers }) => {
                             : <ArrowUpWideNarrow size={26} className="opacity-50" />}
                     </span>
 
-                    {/* Invited By Column */}
                     <span
                         className="col-span-1 opacity-70 text-2xl flex gap-3 items-center cursor-pointer"
                         onClick={() => sortByField("invitedBy")}
@@ -112,7 +109,6 @@ const AllUsers = ({ selectedUsers }) => {
                             : <ArrowUpWideNarrow size={26} className="opacity-50" />}
                     </span>
 
-                    {/* Status Column */}
                     <span
                         className="col-span-1 opacity-70 text-2xl flex gap-3 items-center cursor-pointer"
                         onClick={() => sortByField("status")}
@@ -125,7 +121,6 @@ const AllUsers = ({ selectedUsers }) => {
                             : <ArrowUpWideNarrow size={26} className="opacity-50" />}
                     </span>
 
-                    {/* Invited By Column */}
                     <span className="col-span-1 opacity-70 text-2xl flex items-center justify-center ">
                         Action
                     </span>
